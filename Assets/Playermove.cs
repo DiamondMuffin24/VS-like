@@ -11,10 +11,13 @@ public class Playermove : MonoBehaviour
 
     [SerializeField] float speed = 3f;
 
+    Animate animate;
+
     private void Awake()
     {
         rgbd2d= GetComponent<Rigidbody2D>();
         movementVector = new Vector3();
+        animate = GetComponent<Animate>();
     }
 
     
@@ -24,6 +27,8 @@ public class Playermove : MonoBehaviour
     {
         movementVector.x = Input.GetAxisRaw("Horizontal");
         movementVector.y = Input.GetAxisRaw("Vertical");
+
+        animate.Horizontal = movementVector.x;
 
         movementVector *= speed;
 

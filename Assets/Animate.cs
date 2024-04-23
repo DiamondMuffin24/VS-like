@@ -7,7 +7,7 @@ public class Animate : MonoBehaviour
 {
     Animator animator;
 
-    public float horizontal;
+    public float Horizontal;
 
     private void Awake()
     {
@@ -16,6 +16,6 @@ public class Animate : MonoBehaviour
 
     private void Update()
     {
-        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Horizontal", Horizontal);
     }
 }
