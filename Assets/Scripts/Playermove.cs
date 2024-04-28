@@ -9,7 +9,7 @@ public class Playermove : MonoBehaviour
     Rigidbody2D rgbd2d;
     [HideInInspector]
     public Vector3 movementVector;
-    [HideInInspector]
+    
     public float lastHorizontalVector;
     [HideInInspector]
     public float lastVerticalVector;

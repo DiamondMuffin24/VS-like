@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WhipWeapon : MonoBehaviour
 {
-    [SerializeField] float timeToAttack = 4f;
+    [SerializeField] float timeToAttack = 1.5f;
     float timer;
 
     [SerializeField] GameObject leftWhipObject;
@@ -16,7 +16,8 @@ public class WhipWeapon : MonoBehaviour
 
     private void Awake()
     {
-        playerMove= GetComponent<Playermove>();
+        playerMove = GetComponent<Playermove>();
+        timer = timeToAttack; //starts the attack timer
     }
     private void Update()
     {
@@ -53,7 +54,7 @@ public class WhipWeapon : MonoBehaviour
     {
         for(int i = 0; i < colliders.Length; i++)
         {
-            //Debug.Log(colliders[i].gameObject.name);
+            Debug.Log(colliders[i].gameObject.name);
             Enemy e = colliders[i].GetComponent<Enemy>();
             if(e != null)
             {
