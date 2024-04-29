@@ -10,13 +10,18 @@ public class WhipWeapon : MonoBehaviour
     [SerializeField] GameObject leftWhipObject;
     [SerializeField] GameObject rightWhipObject;
 
-    Playermove playerMove;
+    public Playermove playerMove;
     [SerializeField] Vector2 whipAttackSize = new Vector2(4f, 2f);
     [SerializeField] int whipDamage = 1;
 
+    private void Start()
+    {
+        // playerMove = GetComponent<Playermove>();
+
+    }
+
     private void Awake()
     {
-        playerMove = GetComponent<Playermove>();
         timer = timeToAttack; //starts the attack timer
     }
     private void Update()

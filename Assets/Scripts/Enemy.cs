@@ -29,7 +29,17 @@ public class Enemy : MonoBehaviour
 
     private void onCollissionStay2D(Collision2D collision)
     {
+        Debug.Log("Attacking the character");
         if(collision.gameObject == targetGameobject)
+        {
+            Attack();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("Attacking the character 2");
+        if (col.gameObject == targetGameobject)
         {
             Attack();
         }
@@ -37,7 +47,7 @@ public class Enemy : MonoBehaviour
 
     private void Attack()
     {
-        //Debug.Log("Attacking the character");
+        
         if(targetCharacter == null)
         {
             targetCharacter = targetGameobject.GetComponent<Character>();
