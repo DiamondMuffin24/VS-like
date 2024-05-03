@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fce6c7b4c32669e4a9dad964ce09f84d
+guid: 07a9e921736e5a245847a81e553ae076
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,55 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LargeRock
+      name: chest2_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 289
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f4472f5b2e7c054d95a6be59e7007db
-      internalID: -1681241740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bush1
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 96
-        width: 37
+        x: 1
+        y: 0
+        width: 30
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b09e373ee704da54a96a4bd04402eafc
-      internalID: 505586111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: health
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 258
-        width: 12
-        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +124,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d1d2b514acac24abdb6b0e6973ef1f
-      internalID: -57765134
+      spriteID: 84d72adcf3ac2104db98cb33ea956397
+      internalID: 1979140144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest2_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401b3ba0f60b161428bed92c8bfed485
+      internalID: 1209047489
       vertices: []
       indices: 
       edges: []
@@ -175,7 +154,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 3b8f1f271e0bec149b6befc3676dc3cf
     internalID: 0
     vertices: []
     indices: 
@@ -183,9 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      LargeRock: -1681241740
-      bush1: 505586111
-      health: -57765134
+      chest2_0: 1979140144
+      chest2_1: 1209047489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
