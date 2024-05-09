@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ExperienceBar : MonoBehaviour
 {
-    [SerializeField] Slider slider;
+    public Slider slider;
     [SerializeField] TMPro.TextMeshProUGUI levelText;
 
     public void UpdateExperienceSlider(int current, int target)

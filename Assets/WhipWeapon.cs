@@ -39,7 +39,7 @@ public class WhipWeapon : MonoBehaviour
         //Debug.Log("Attack");
         timer = timeToAttack;
 
-        if(playerMove.lastHorizontalVector < 0)
+        if(playerMove.lastHorizontalVector > 0)
         {
             rightWhipObject.SetActive(true);
             Collider2D[] colliders = Physics2D.OverlapBoxAll(rightWhipObject.transform.position, whipAttackSize, 0f);

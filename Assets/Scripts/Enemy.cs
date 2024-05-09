@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour, IDamageable
         rgbd2d.velocity = direction * speed;
     }
 
-    private void onCollissionStay2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         Debug.Log("Attacking the character");
         if(collision.gameObject == targetGameobject)

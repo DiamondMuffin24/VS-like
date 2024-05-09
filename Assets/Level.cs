@@ -6,6 +6,7 @@ public class Level : MonoBehaviour
 {
     int level = 1;
     int experience = 0;
+    
     [SerializeField] ExperienceBar experienceBar;
 
 
@@ -16,7 +17,7 @@ public class Level : MonoBehaviour
             return level * 1000;
         }
     }
-
+    
     private void Start()
     {
         experienceBar.UpdateExperienceSlider(experience, TO_LEVEL_UP);
@@ -32,11 +33,14 @@ public class Level : MonoBehaviour
 
     public void CheckLevelUp()
     {
-        if(experience <= TO_LEVEL_UP)
+        if(experience >= TO_LEVEL_UP)
         {
-            experience -= TO_LEVEL_UP;
+            Debug.Log("Level up");
+            experience = 0;
             level += 1;
             experienceBar.SetLevelText(level);
+            experienceBar.slider.value = 0;
+            Debug.Log("Experience Bar value = "+ experienceBar.slider.value);
         }
     }
 }
