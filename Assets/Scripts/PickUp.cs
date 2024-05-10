@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    [SerializeField] int healAmount;
+    
 
 
 
@@ -14,7 +14,7 @@ public class PickUp : MonoBehaviour
         Character c = collision.GetComponent<Character>();
         if(c != null )
         {
-            c.Heal(healAmount);
+            GetComponent<IPickUpObject>().OnPickUp(c);
             Destroy(gameObject);
         }
     }

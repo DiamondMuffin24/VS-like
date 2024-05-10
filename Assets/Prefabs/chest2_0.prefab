@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9032088074906008866}
   - component: {fileID: 8982123244530966488}
   - component: {fileID: 2910504002830311058}
+  - component: {fileID: -4984335812272347679}
   m_Layer: 0
   m_Name: chest2_0
   m_TagString: Untagged
@@ -178,5 +179,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b84910ee60aff845b032da3026feee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPickUp: {fileID: 3423769323545167711, guid: bc744fde278ac4e4685d1a6a3b8eccd8, type: 3}
+  dropItemPrefab: {fileID: 3423769323545167711, guid: bc744fde278ac4e4685d1a6a3b8eccd8, type: 3}
   chance: 0.2
+--- !u!114 &-4984335812272347679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335231788506426062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef21f080cfa1b47ab916f66d943856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

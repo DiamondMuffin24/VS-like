@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8164789426415480350}
   - component: {fileID: 5704471854567308061}
   - component: {fileID: 1346648933661581956}
+  - component: {fileID: -1332794766182318027}
+  - component: {fileID: -2786303419934246571}
   m_Layer: 0
   m_Name: EnemyBat
   m_TagString: Untagged
@@ -197,3 +199,29 @@ MonoBehaviour:
   hp: 1
   damage: 2
   experience_reward: 250
+--- !u!114 &-1332794766182318027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696680387877977518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b84910ee60aff845b032da3026feee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItemPrefab: {fileID: 6228688901811507473, guid: 17a560336d52f81459dc66bbd089552a, type: 3}
+  chance: 1
+--- !u!114 &-2786303419934246571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696680387877977518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef21f080cfa1b47ab916f66d943856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

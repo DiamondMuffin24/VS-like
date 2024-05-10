@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -63,10 +64,16 @@ public class WorldScrolling : MonoBehaviour
                 //Debug.Log("tileToUpdate_x" + tileToUpdate_x + "tileToUpdate_Y" +  tileToUpdate_y);
 
                 GameObject tile = terrainTiles[tileToUpdate_x, tileToUpdate_y];
-                tile.transform.position = CalculateTilePosition(
+                Vector3 newPosition = CalculateTilePosition(
                     playerTilePosition.x + pov_x,
                     playerTilePosition.y + pov_y
                     );
+                if(newPosition != tile.transform.position)
+                {
+                    tile.transform.position = newPosition;
+                terrainTiles[tileToUpdate_x, tileToUpdate_y].GetComponent<TerrainTile>().Spawn();
+                }
+                
             }
         }
     }
