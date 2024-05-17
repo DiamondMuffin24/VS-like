@@ -508,25 +508,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 751772895}
     m_Modifications:
+    - target: {fileID: -1865580051344386924, guid: ce1fa8bc6b28d734d8bf37ca77962a42, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3204058069828331140, guid: ce1fa8bc6b28d734d8bf37ca77962a42, type: 3}
       propertyPath: m_Name
       value: LargeRock
       objectReference: {fileID: 0}
     - target: {fileID: 3204058069828331140, guid: ce1fa8bc6b28d734d8bf37ca77962a42, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8048658024364356025, guid: ce1fa8bc6b28d734d8bf37ca77962a42, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.4319
-      objectReference: {fileID: 0}
-    - target: {fileID: 8048658024364356025, guid: ce1fa8bc6b28d734d8bf37ca77962a42, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.4319
-      objectReference: {fileID: 0}
-    - target: {fileID: 8048658024364356025, guid: ce1fa8bc6b28d734d8bf37ca77962a42, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.4319
+      propertyPath: m_TagString
+      value: rock
       objectReference: {fileID: 0}
     - target: {fileID: 8048658024364356025, guid: ce1fa8bc6b28d734d8bf37ca77962a42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -589,6 +581,8 @@ GameObject:
   - component: {fileID: 118586766}
   - component: {fileID: 118586767}
   - component: {fileID: 118586768}
+  - component: {fileID: 118586769}
+  - component: {fileID: 118586770}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -730,6 +724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 1000
   currentHp: 1000
+  armor: 0
   hpBar: {fileID: 757071575}
   level: {fileID: 0}
   coins: {fileID: 0}
@@ -760,6 +755,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinAcquired: 0
   coinsCountText: {fileID: 1064738373}
+--- !u!114 &118586769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118586760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f61c668993b5aa4b993392b359157be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  armorTest: {fileID: 11400000, guid: 62558814239bd9346b48c2c7538ba4f3, type: 2}
+--- !u!114 &118586770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118586760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3032330a9d92d2429b2d5abb3597e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &128525645 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6612985022148312579, guid: 40a4b970b18520942a52160b820fbd4f, type: 3}
@@ -5307,7 +5328,7 @@ PrefabInstance:
     - target: {fileID: 4102113761452988045, guid: 935841c2f73a5164d95dd1f5873d2c49, type: 3}
       propertyPath: toSpawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1306964847620678539, guid: bb7fb9ea774352545bd266663f3d9489, type: 3}
     - target: {fileID: 8319582281357999751, guid: 935841c2f73a5164d95dd1f5873d2c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.14
@@ -6986,7 +7007,7 @@ PrefabInstance:
     - target: {fileID: 4102113761452988045, guid: 935841c2f73a5164d95dd1f5873d2c49, type: 3}
       propertyPath: toSpawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 335231788506426062, guid: 6eb85aebf901c9849941c6fc5d904d27, type: 3}
     - target: {fileID: 8319582281357999751, guid: 935841c2f73a5164d95dd1f5873d2c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.14

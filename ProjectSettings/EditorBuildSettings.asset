@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 8ba94fb3178efb841a55e07e96b3e79e
+  - enabled: 1
+    path: Assets/Scenes/Hidden_horror.unity
+    guid: 2b2f9b33b5046434693bb946f0dcf81a
+  - enabled: 1
+    path: Assets/Scenes/Inside_House.unity
+    guid: 2281ca5a63dfc414db5d10a9a9acaae1
   m_configObjects: {}
